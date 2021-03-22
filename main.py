@@ -63,6 +63,7 @@ freq = collect(1500)
 sorted_freq = sorted(freq.items(), key=lambda kv : kv[1], reverse=True)
 
 # prints top 10 tags with the count for each tag
+
 for i in range(min(10, len(sorted_freq))):
     print(sorted_freq[i][0] + ' ' + str(sorted_freq[i][1]))
 
